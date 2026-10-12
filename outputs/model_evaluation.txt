@@ -1,0 +1,40 @@
+============================================================
+HOTEL BOOKING CANCELLATION MODEL - EVALUATION REPORT
+StayNest Hospitality Group
+============================================================
+
+Algorithm : XGBoost Classifier
+Features  : 28
+Train size: 69783
+Test size : 17446
+
+-- TRAINING SET --
+  Accuracy : 0.9242
+  Precision: 0.8853
+  Recall   : 0.8323
+  F1-Score : 0.858
+
+-- TEST SET --
+  Accuracy : 0.8542
+  Precision: 0.7541
+  Recall   : 0.698
+  F1-Score : 0.725
+  ROC-AUC  : 0.9203
+
+-- OVERFITTING CHECK --
+  Train-Test Accuracy Gap: 0.0699
+  Train-Test F1 Gap      : 0.133
+
+-- CLASSIFICATION REPORT (TEST) --
+              precision    recall  f1-score   support
+
+Not Canceled       0.89      0.91      0.90     12644
+    Canceled       0.75      0.70      0.72      4802
+
+    accuracy                           0.85     17446
+   macro avg       0.82      0.81      0.81     17446
+weighted avg       0.85      0.85      0.85     17446
+
+-- CONFUSION MATRIX (TEST) --
+  TN=11551  FP=1093
+  FN=1450  TP=3352
